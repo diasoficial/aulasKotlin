@@ -1,0 +1,1 @@
+Repósitorio desenvolvido com o motivo de fazer commits diarios de todo conhecimendo que vou adquirindo com as aulas de Kotlin
