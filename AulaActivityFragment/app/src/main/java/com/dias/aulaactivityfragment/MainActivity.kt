@@ -28,9 +28,26 @@ class MainActivity : AppCompatActivity() {
             //finish()
             //this se refere a classe MainActivity que estamos codando
             val intent = Intent(
+                //Estou na MainActivity
                 this,
+                //Estou indo para a DetalhesActivity
                 DetalhesActivity::class.java
             )
+
+            //Passar parâmetros para nova tela "DetalhesActivity
+            /*intent.putExtra("filme", "The Witcher")//Exemplo netflix
+            intent.putExtra("classificacao", 5)
+            intent.putExtra("avaliacoes", 9.25)*/
+
+            //Passar as informações a cima como objeto, criando uma class nova "Filme"
+            val filme = Filme(
+                "Sem limites",
+                "teste",
+                4.8,
+                "Gabriel",
+                "Netflix"
+            )
+            intent.putExtra("filme", filme)
 
             //Iniciar uma nova tela
             startActivity(intent)
