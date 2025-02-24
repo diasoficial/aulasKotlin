@@ -15,9 +15,14 @@ import com.dias.aulafragment.R
 //class ConversasFragment : Fragment(R.layout.fragment_conversas)
 class ConversasFragment : Fragment() {
 
-    private lateinit var btnExecutar : Button
-    private lateinit var textNome : TextView
-    private lateinit var editNome : EditText
+    private lateinit var btnExecutar: Button
+    private lateinit var textNome: TextView
+    private lateinit var editNome: EditText
+    private lateinit var textCategoria: TextView
+
+    //pode ser nulo
+    private var categoria: String? = null
+    private var usuario: String? = null
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -27,6 +32,8 @@ class ConversasFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Log.i("ciclo_vida", "Fragment onCreate")
+        categoria = arguments?.getString("categoria")
+        usuario = arguments?.getString("usuario")
     }
 
     //Aqui é criada a visualização
@@ -50,8 +57,10 @@ class ConversasFragment : Fragment() {
         btnExecutar = view.findViewById(R.id.btn_executar)
         editNome = view.findViewById(R.id.edit_nome)
         textNome = view.findViewById(R.id.text_nome)
+        textCategoria = view.findViewById(R.id.text_categoria)
 
-        //view.findViewById<>()
+        textCategoria.text = categoria
+        textNome.text = usuario
 
         btnExecutar.setOnClickListener {
             val nome = editNome.text.toString()
