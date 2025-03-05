@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,13 +29,22 @@ class MainActivity : AppCompatActivity() {
         btnExecutar = findViewById(R.id.btn_executar)
         textResultado = findViewById(R.id.text_resultado)
 
-        btnExecutar.setOnClickListener {
+        /*btnExecutar.setOnClickListener {
             textResultado.text = "Gabriel Dias"
-        }
+        }*/
 
     }
 
     fun cliqueBotao(view: View) {
+
+        //Exibir mensagens de erro
+        Toast.makeText(
+            this,
+            "Sucesso ao fazer algo",
+            Toast.LENGTH_LONG
+        ).show()
+        
+        
         textResultado.text = "GABRIEL DIAS"
     }
 }
