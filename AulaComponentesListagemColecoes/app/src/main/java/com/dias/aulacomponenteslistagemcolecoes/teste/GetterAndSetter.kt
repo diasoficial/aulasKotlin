@@ -1,6 +1,6 @@
 package com.dias.aulacomponenteslistagemcolecoes.teste
 
-class Usuario() {
+/*class Usuario() {
 
     var nome: String = ""
         //Toda vez que recuperar o valor de nome ele será transformado para uppercase
@@ -15,8 +15,9 @@ class Usuario() {
     var idade: Int = 0
     var maiorIdade = false
         get() = idade >= 18
-}
+}*/
 
+/*
 fun main() {
 
     val usuario = Usuario()
@@ -26,11 +27,13 @@ fun main() {
     println("nome: ${usuario.nome}," +
            "idade: ${usuario.idade} maiorIdade: ${usuario.maiorIdade}" )
 
-    /*
+    */
+/*
     val pessoa = Pessoa()
     //Aqui é Setter
     pessoa.nome = "Gabriel"
     //Aqui é Getter
     println("nome: ${pessoa.nome}")
-    */
-}
+    *//*
+
+}*/
