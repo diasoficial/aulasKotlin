@@ -40,7 +40,22 @@ class Bateria : Instrumento {
     }
 }
 
+class Guitarra : Instrumento {
+    override fun sendoTocado() {
+        println("Utilizar cordas")
+        println("Utilizar tambem ajuste de som")
+        println("para tocar a guitarra")
+    }
+}
+
+class Activity {
+    fun putExtra() {
+
+    }
+}
+
 fun main() {
+    /* 1
     //Violao e Bateria passam a ser de dois tipos, Instrumento e Violao / Bateria
 
     //val violao : Instrumento = Violao()
@@ -65,6 +80,16 @@ fun main() {
     val bateria1 = Bateria()
     val musico3 = Musico(bateria1)//Bateria como Instrumento (uso apenas métodos de instrumento os métodos de bateria vão ser desconsiderados)
     musico3.tocar()
+
+    println("+++++++++++++++++++++++++")
+
+    //Tela 4 (guitarra)
+    val guitarra = Guitarra()
+    val musico4 = Musico(guitarra) // Dois tipos: Guitarra e Instrumento
+    musico4.tocar()
+    */
+
+
 }
 
 //Quando uso herança eu uso ()

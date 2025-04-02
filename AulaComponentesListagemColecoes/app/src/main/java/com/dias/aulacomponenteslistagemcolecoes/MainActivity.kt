@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val intent = Intent(this, MainActivity::class.java)
+
+        intent.putExtra("nome", "Gabriel Dias")
+
+        startActivity(intent)
+
         //Utiliar o metodo findViewById que está dentro do da MainActivity que está herdando do AppCompatActivity()
 
         btnExecutar = findViewById(R.id.btn_executar)
